@@ -1,0 +1,108 @@
+ /*Main page style */
+ :root {
+    font-size: 16px; /* Sets the root font size，1rem = 16px */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #dad7cd; /* Light gray-green background */
+    color: #344e41; /* Darkest green text */
+}
+
+header {
+    background-color: #3a5a40; /* Dark green */
+    color: #dad7cd;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.125rem solid #588157; /* frame */
+}
+
+header a {
+    text-decoration: none;
+    color: #a3b18a; /* Light green text */
+    margin-left: 1.25rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* The content, map, and result parts are uniformly colored */
+.content, .map, .results {
+    padding: 1.5rem;
+    background-color: #a3b18a; /* Light green background */
+    border: 0.0625rem solid #3a5a40; /* Border color */
+    color: #344e41; /* Text color */
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem; /* Margins*/
+}
+
+.content img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 60%; /* Limit the maximum width to 60% */
+    height: auto;
+    border: 0.125rem solid #3a5a40; /* Image borders */
+    border-radius: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3a5a40; /* Dark green background */
+    color: #dad7cd; /* Light gray-green text */
+    border-top: 0.125rem solid #588157; /* Border color */
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.625rem 1.25rem;
+    background-color: #588157; /* button color */
+    color: #dad7cd;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #344e41; /* button hover effect */
+}
+
+/* Responsive design: mobile adjustments */
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 14px; /* Reduce the root font size */
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    header a {
+        margin: 0.5rem 0;
+    }
+
+    .content, .map, .results {
+        padding: 1rem;
+        font-size: 0.9rem;
+        margin: 1rem;
+    }
+
+    .content img {
+        max-width: 90%; /* Maximum width of images on small screens: 90% */
+        border-radius: 0.25rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
