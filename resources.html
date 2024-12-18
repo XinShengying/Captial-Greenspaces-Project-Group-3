@@ -4,46 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources</title>
+    <link rel="stylesheet" href="static/css/resourcesstyles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Quantifying Carbon Stock: the Roseburn Path</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="home-btn">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container">
+            <ul>
+                <p style="margin-bottom: 0.3rem;">The loss of carbon stock is just one potential impact of the tramline extension. Some resources are provided below, to help individuals further explore the topic and consider dimensions that are outwith the scope of this project, such as active travel or the employment the tramline could generate.</p>
+            </ul>
+        </div>
+    </header>
+    <main>
+    <div class="resource-section">
+        <ul>
+            <p>The loss of carbon stock is just one potential impact of the tramline extension. Some resources are provided below, to help individuals further explore the topic and consider dimensions that are outwith the scope of this project, such as active travel or the employment the tramline could generate.</p>
+        </ul>
+    </div>
 
-<header>
-    <h1>Resources</h1>
-    <nav>
-        <a href="mainpage1.html">Home</a>
-        <a href="about.html">About Us</a>
-    </nav>
-</header>
+    <div class="resource-section">
+        <h2>City of Edinburgh Council</h2>
+        <ul>
+            <li><a href="https://www.edinburgh.gov.uk/public-transport/trams-granton-bioquarter-beyond/2" target="_blank">The latest information around the tramline proposal can be found on the City of Edinburgh Council website</a></li>
+            <li><a href="https://www.edinburgh.gov.uk/public-transport/trams-granton-bioquarter-beyond" target="_blank">Background information to the project</a></li>
+            <li><a href="https://democracy.edinburgh.gov.uk/documents/s66427/Item%207.3%20Tram%20from%20Granton%20to%20BioQuarter%20and%20Beyond%20Consultation%20for%20Strategic%20Business%20Case%20Develop.pdf" target="_blank">Report to the Transport and Environment Committee, justifying the proposal</a></li>
+        </ul>
+    </div>
 
-<div class="resource-section">
-    <h2>Campaign Links</h2>
-    <ul>
-        <li><a href="https://www.savetheroseburnpath.com/" target="_blank">Save the Roseburn Path Campaign</a></li>
-        <li><a href="https://www.edinburghlibdems.org/roseburn-path" target="_blank">Save the Telford / Roseburn Path – Edinburgh Liberal Democrats</a></li>
-    </ul>
-</div>
+    <div class="resource-section">
+        <h2>Save the Roseburn Path Campaign</h2>
+        <ul>
+            <li><a href="https://www.savetheroseburnpath.com/" target="_blank">The campaign’s website</a></li>
+            <p>The Save the Roseburn Path Campaign also have an active social media presence, and regularly post updates.</p>
+            <li><a href="https://www.edinburghlibdems.org/roseburn-path" target="_blank">The Edinburgh Liberal Democrats have also voiced their support to save the path</a></li>
+            <li><a href="https://www.facebook.com/groups/914482190342598/" target="_blank">The campaign’s Facebook page</a></li>
+            <li><a href="https://www.instagram.com/savetheroseburnpath?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">The campaign’s Instagram account</a></li>
+        </ul>
+    </div>
 
-<div class="resource-section">
-    <h2>Reports</h2>
-    <p>
-        <a href="downloads/roseburn_path_report.pdf" download>Download Our Report – Quantifying the Carbon Stock of the Roseburn Path</a>
-    </p>
-</div>
+    <div class="resource-section">
+        <h2>Biodiversity, Nature, and Climate Action</h2>
+        <ul>
+            <li><a href="https://www.edinburgh.gov.uk/downloads/file/33491/edinburgh-biodiversity-action-plan-2022-2027" target="_blank">The Edinburgh Biodiversity Action Plan (2022-2027), noting the need to preserve and increase natural carbon stores</a></li>
+            <li><a href="https://www.edinburgh.gov.uk/parks-greenspaces/one-million-tree-city" target="_blank">The One Million Tree Project</a></li>
+        </ul>
+    </div>
 
-<div class="resource-section">
-    <h2>Our Data</h2>
-    <p>
-        <a href="downloads/roseburn_path_data.zip" download>Download All Data (ZIP)</a>
-    </p>
-    <ul>
-        <li><a href="downloads/data_part1.csv" download>Download Data Part 1</a></li>
-        <li><a href="downloads/data_part2.csv" download>Download Data Part 2</a></li>
-    </ul>
-</div>
+    <div class="resource-section">
+        <h2>Active travel</h2>
+        <ul>
+            <li><a href="https://usmart.io/org/cyclingscotland/" target="_blank">Statistics available for Roseburn Path usage</a></li>
+            <li><a href="https://www.sustrans.org.uk/media/13315/walking-and-cycling-index-2023-edinburgh.pdf" target="_blank">Report exploring the active travel (walking and cycling) in Edinburgh in 2023</a></li>
+        </ul>
+    </div>
 
-<footer>
-    <p>&copy; 2024 Your Website</p>
-</footer>
+    <div class="resource-section">
+        <h2>Local Reporting on the Tramline Proposal</h2>
+        <ul>
+            <li><a href="https://www.edinburghnews.scotsman.com/news/edinburghs-new-north-south-tram-route-set-to-take-over-popular-roseburn-cycle-path-4494619" target="_blank">The Edinburgh Evening News</a></li>
+            <li><a href="https://theedinburghreporter.co.uk/2024/06/tram-to-granton-the-options-discussed/" target="_blank">The Edinburgh Reporter</a></li>
+            <li><a href="https://www.scotsman.com/news/transport/roseburn-path-the-battle-over-whether-an-old-edinburgh-rail-line-should-become-a-tram-route-4602356" target="_blank">The Scotsman</a></li>
+        </ul>
+    </div>
 
+    <div class="resource-section">
+        <h2>Reports</h2>
+        <p>
+            <a href="{{ url_for('download_file', filename='roseburn_path_report.pdf') }}" download>Download Our Report – Quantifying the Carbon Stock of the Roseburn Path (.PDF)</a>
+        </p>
+    </div>
+    
+    <div class="resource-section">
+        <h2>Our Data</h2>
+        <p>
+            <a href="{{ url_for('download_file', filename='roseburn_path_data.zip') }}" download>Download All Data (.zip)</a>
+        </p>
+        <ul>
+            <li><a href="{{ url_for('download_file', filename='roseburntrees.csv') }}" download>Download CSV Data (.csv)</a></li>
+            <p>How to import csv file into your GIS software?
+                <div style="align-items: left;">
+                <strong>Step.1</strong> Download and extract the compressed file.
+                <br>
+                <strong>Step.2</strong> Open 'Delimited Text' tab, choose the csv file, then click 'add'.
+                <br>
+                <img src="static\img\import_tutorial1.png" style="height: 500px">
+                <br>
+                <strong>Step.3</strong> Check our plots on your computer!
+                <br>
+                <img src="static\img\import_tutorial2.png" style="height: 500px">
+            </p>
+            <li><a href="{{ url_for('download_file', filename='boundary&tramline.zip') }}" download>Download Boundary and Tramline Data (.zip)</a></li>
+            <li><a href="{{ url_for('download_file', filename='carbon&biomass.zip') }}" download>Download the Result of Biomass and Carbon (.tif files in a .zip)</a></li>
+        </ul>
+    </div>
+</main>
 </body>
 </html>
