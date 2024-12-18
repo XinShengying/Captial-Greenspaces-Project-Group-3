@@ -82,7 +82,7 @@ The AJAX technique was used to allow the website to query the database continuou
  
 ### Deployment of the website 
 
-To make our web application available online for public access, fistly we used SSH to connect to the devapps virtul machine. Then we used command below to run our application. Our app-name is "app", and the module-name is "roseburnbiomass". 
+To make our web application available online for public access, fistly we used SSH to connect to the devapps virtual machine. Then we used command below to run our application. Our app-name is "app", and the module-name is "roseburnbiomass". 
 
 ``` SCRIPT_NAME=/dev/<app-name> gunicorn --bind 0.0.0.0:<port> <module-name>:app```
 
